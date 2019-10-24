@@ -4,6 +4,7 @@ import './assets/styles/variables.scss';
 import './assets/styles/style.scss';
 import './assets/styles/media-breakpoints.scss';
 import './assets/styles/animations.scss';
+import './assets/styles/chart.scss';
 
 
 //images
