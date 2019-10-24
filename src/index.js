@@ -3,6 +3,7 @@ import './assets/styles/reset.scss';
 import './assets/styles/variables.scss';
 import './assets/styles/style.scss';
 import './assets/styles/media-breakpoints.scss';
+import './assets/styles/animations.scss';
 
 
 //images
@@ -27,6 +28,64 @@ import './assets/images/chart1.png';
 import './assets/images/chart2.png';
 import './assets/images/chart3.png';
 import './assets/images/chart4.png';
+
+
+//menu bars animation and popup
+$('[data-toggle]').on("click", function (e) {
+    e.preventDefault();
+    let element = $(this).data('toggle');
+
+    $('[data-' + element + ']').toggleClass(element + '--active');
+
+    if ($(this).hasClass(element + '--active')) {
+        $(this).removeClass(element + '--active').addClass(element + '--unactive');
+        $("body").css({
+            "overflow": "visible"
+        });
+
+    } else if ($(this).hasClass(element + '--unactive')) {
+        $(this).removeClass(element + '--unactive').addClass(element + '--active');
+        $("body").css({
+            "overflow": "hidden"
+        });
+
+    } else {
+        $(this).addClass(element + '--active');
+        $("body").css({
+            "overflow": "hidden"
+        });
+    }
+});
+
+//Scroll to specific element possition functionality
+function scrollToCord(y) {
+    window.scrollTo({
+        top: y,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
+//checking if popup is open or not
+$('[data-scroll]').on("click", function (e) {
+    e.preventDefault();
+    let element = $(this).data('scroll');
+    var offset = $('#'+ element).offset();
+    
+    if ($('.nav__menu-bars-popup').hasClass('nav__menu-bars-popup--active')) {
+        $('.nav__menu-bars-popup').removeClass('nav__menu-bars-popup--active');
+        $('.nav__menu-bars-container').removeClass('nav__menu-bars-popup--active').addClass('nav__menu-bars-popup--unactive');
+        $("body").css({
+            "overflow": "visible"
+        });
+        console.log('klase buvo. istryniau');
+    } else {
+        console.log('nu as nieko neivykdziau sry')
+        
+    }
+    
+    scrollToCord(offset.top);
+})
 
 
 

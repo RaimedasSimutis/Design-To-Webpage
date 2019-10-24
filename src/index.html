@@ -14,14 +14,41 @@
         <a href="#" class="nav__logo">
             <img src="logo.svg" alt=""></a>
         <ul class="nav__menu">
-            <li class="nav__list">HOME</li>
-            <li class="nav__list">ABOUT</li>
-            <li class="nav__list">WORK</li>
-            <li class="nav__list">BLOG</li>
-            <li class="nav__list">CONTACT</li>
+            <li class="nav__list" data-scroll="home">HOME</li>
+            <li class="nav__list" data-scroll="about">ABOUT</li>
+            <li class="nav__list" data-scroll="work">WORK</li>
+            <li class="nav__list" data-scroll="blog">BLOG</li>
+            <li class="nav__list" data-scroll="contact">CONTACT</li>
+        </ul>
+
+        <a class="nav__menu-bars-container" id="menu-bars" data-toggle="nav__menu-bars-popup" href="#">
+            <div class="nav__menu-bar nav__menu-bar--upper" id="upper-menu-bar"></div>
+            <div class="nav__menu-bar nav__menu-bar--middle" id="middle-menu-bar"></div>
+            <div class="nav__menu-bar nav__menu-bar--lower" id="lower-menu-bar"></div>
+        </a>
+
+        <ul class="nav__menu-bars-popup" data-nav__menu-bars-popup="">
+            <li class="nav__menu-bar-list nav__menu-bar-list--home" data-scroll="home">
+                <h2>HOME</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--about" data-scroll="about">
+                <h2>ABOUT</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--work" data-scroll="work">
+                <h2>WORK</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--blog" data-scroll="blog">
+                <h2>BLOG</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--contact" data-scroll="contact">
+                <h2>CONTACT</h2>
+            </li>
         </ul>
     </nav>
-    <section class="banner">
+
+
+
+    <section class="banner" id="home">
         <h1 class="banner__header">Hi there! We are the new kids on the block and we build awesome website and mobile
             apps.</h1>
         <a href=# class="banner__button">
@@ -33,7 +60,7 @@
         <h1 class="services__header header-generic">SERVICES WE PROVIDE</h1>
         <div class="services__breakline breakline-generic"></div>
         <p class="services__paragraph paragraph-generic">
-            We are working with both individuals and businesses from all over the globe 
+            We are working with both individuals and businesses from all over the globe
             to create awesome websites and applications.
         </p>
         <div class="services__card-container">
@@ -63,7 +90,7 @@
         </div>
     </section>
 
-    <section class="team container-generic">
+    <section class="team container-generic" id="about">
         <h1 class="team__header header-generic">MEET OUR BEAUTIFUL TEAM</h1>
         <div class="team__breakline breakline-generic"></div>
         <p class="team__paragraph paragraph-generic">
@@ -133,7 +160,7 @@
         </div>
     </section>
 
-    <section class="skills container-generic">
+    <section class="skills container-generic" id="blog">
         <h1 class="skills__header header-generic">WE GOT SKILLS!</h1>
         <div class="skills__breakline breakline-generic"></div>
         <p class="skills__paragraph paragraph-generic">
@@ -165,7 +192,7 @@
         </div>
     </section>
 
-    <section class="portfolio container-generic">
+    <section class="portfolio container-generic" id="work">
         <h1 class="portfolio__header header-generic">OUR PORTFOLIO</h1>
         <div class="portfolio__breakline breakline-generic"></div>
         <p class="portfolio__paragraph paragraph-generic">
@@ -266,7 +293,7 @@
         </div>
     </section>
 
-    <section class="contact container-generic">
+    <section class="contact container-generic" id="contact">
         <h1 class="contact__header header-generic">GET IN TOUCH</h1>
         <div class="contact__breakline breakline-generic"></div>
         <p class="contact__paragraph paragraph-generic">
@@ -274,11 +301,11 @@
         </p>
         <form class="contact__form" action="#">
 
-            <input class="contact__form-input" type="text" id="fname" name="firstname" placeholder="Your Name"
+            <input class="contact__form-input" type="text" id="fname" name="firstname" placeholder="Your Name*"
                 required="required">
-            <input class="contact__form-input" type="text" id="email" name="email" placeholder="Your Email"
+            <input class="contact__form-input" type="text" id="email" name="email" placeholder="Your Email*"
                 required="required">
-            <textarea class="contact__form-text-area" id="msg" name="message" placeholder="Your Message"
+            <textarea class="contact__form-text-area" id="msg" name="message" placeholder="Your Message*"
                 required="required"></textarea>
             <input class="contact__submit-btn" type="submit" value="SEND MESSAGE">
 
@@ -295,6 +322,10 @@
         <a class="footer__link" href="https://www.github.com">GitHub</a>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

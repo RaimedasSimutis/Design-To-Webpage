@@ -1,6 +1,6 @@
 @media (max-width: 1250px) {
     .nav {
-        background-color: red;
+        //background-color: red;
         padding: 57px 100px 30px 100px;
     }
 
@@ -96,7 +96,7 @@
     // }
 
     .nav {
-        background-color: blue;
+        //background-color: blue;
         padding: 20px 30px;
 
         &__menu {
@@ -109,6 +109,10 @@
                 width: 65px;
                 height: auto;
             }
+        }
+
+        &__menu-bars-container {
+            display: flex;
         }
     }
 
@@ -266,7 +270,7 @@
     }
 
     .nav {
-        background-color: green;
+        //background-color: green;
         padding: 10px 20px;
 
     }
