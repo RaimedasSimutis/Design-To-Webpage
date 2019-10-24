@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <nav class="nav">
+        <a href="#" class="nav__logo">
+            <img src="logo.svg" alt=""></a>
+        <ul class="nav__menu">
+            <li class="nav__list" data-scroll="home">HOME</li>
+            <li class="nav__list" data-scroll="about">ABOUT</li>
+            <li class="nav__list" data-scroll="work">WORK</li>
+            <li class="nav__list" data-scroll="blog">BLOG</li>
+            <li class="nav__list" data-scroll="contact">CONTACT</li>
+        </ul>
+
+        <a class="nav__menu-bars-container" id="menu-bars" data-toggle="nav__menu-bars-popup" href="#">
+            <div class="nav__menu-bar nav__menu-bar--upper" id="upper-menu-bar"></div>
+            <div class="nav__menu-bar nav__menu-bar--middle" id="middle-menu-bar"></div>
+            <div class="nav__menu-bar nav__menu-bar--lower" id="lower-menu-bar"></div>
+        </a>
+
+        <ul class="nav__menu-bars-popup" data-nav__menu-bars-popup="">
+            <li class="nav__menu-bar-list nav__menu-bar-list--home" data-scroll="home">
+                <h2>HOME</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--about" data-scroll="about">
+                <h2>ABOUT</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--work" data-scroll="work">
+                <h2>WORK</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--blog" data-scroll="blog">
+                <h2>BLOG</h2>
+            </li>
+            <li class="nav__menu-bar-list nav__menu-bar-list--contact" data-scroll="contact">
+                <h2>CONTACT</h2>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <section class="banner" id="home">
+        <h1 class="banner__header">Hi there! We are the new kids on the block and we build awesome website and mobile
+            apps.</h1>
+        <a href=# class="banner__button">
+            <p>WORK WITH US!</p>
+        </a>
+    </section>
+
+    <section class="services container-generic">
+        <h1 class="services__header header-generic">SERVICES WE PROVIDE</h1>
+        <div class="services__breakline breakline-generic"></div>
+        <p class="services__paragraph paragraph-generic">
+            We are working with both individuals and businesses from all over the globe
+            to create awesome websites and applications.
+        </p>
+        <div class="services__card-container">
+            <div class="services__card">
+                <img src="flag.png" alt="">
+                <h3>BRANDING</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+            <div class="services__card">
+                <img src="crayon.svg" alt="">
+                <h3>DESIGN</h3>
+                <p>Dolore obcaecati enim veritatis? Harum autem obcaecati cum a illum odio dicta vel tenetur.</p>
+            </div>
+
+            <div class="services__card">
+                <img src="gears.png" alt="">
+                <h3>DEVELOPMENT</h3>
+                <p>Nobis, voluptas! Quaerat hic dolore molestiae sint.</p>
+            </div>
+
+            <div class="services__card">
+                <img src="rocket.svg" alt="">
+                <h3>ROCKET SCIENCE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team container-generic" id="about">
+        <h1 class="team__header header-generic">MEET OUR BEAUTIFUL TEAM</h1>
+        <div class="team__breakline breakline-generic"></div>
+        <p class="team__paragraph paragraph-generic">
+            We are small team of designers and developers, who help brands with big ideas.
+        </p>
+        <div class="team__card-container">
+
+            <div class="team__card">
+                <img class="team__member-image" src="anne-hathaway.png" alt="">
+                <h3>ANIE HATHAWAY</h3>
+                <h4>CEO / Marketing Guru</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, alias. Lorem ipsum dolor sit
+                    amet.
+                </p>
+                <div class="team__social-icons-container">
+                    <a class="team__social-icons" href="https://www.facebook.com/"><img src="facebook.png" alt=""></a>
+                    <a class="team__social-icons" href="https://twitter.com/"><img src="twitter.png" alt=""></a>
+                    <a class="team__social-icons" href="#"><img src="linkedin.png" alt=""></a>
+                    <a class="team__social-icons" href="#"><img src="mail.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="team__card">
+                <img class="team__member-image" src="kate-upton.png" alt="">
+                <h3>KATE UPTON</h3>
+                <h4>Creative director</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, mollitia?
+                </p>
+                <div class="team__social-icons-container">
+
+                    <a class="team__social-icons" href="https://twitter.com/"><img src="twitter.png" alt=""></a>
+                    <a class="team__social-icons" href="https://www.linkedin.com"><img src="linkedin.png" alt=""></a>
+                    <a class="team__social-icons" href="https://www.gmail.com"><img src="mail.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="team__card">
+                <img class="team__member-image" src="olivia-wilde.png" alt="">
+                <h3>OLIVIA WILDE</h3>
+                <h4>Lead Designer</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <div class="team__social-icons-container">
+                    <a class="team__social-icons" href="https://www.facebook.com/"><img src="facebook.png" alt=""></a>
+                    <a class="team__social-icons" href="https://twitter.com/"><img src="twitter.png" alt=""></a>
+                    <a class="team__social-icons" href="https://www.linkedin.com"><img src="linkedin.png" alt=""></a>
+                    <a class="team__social-icons" href="https://www.gmail.com"><img src="mail.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="team__card">
+                <img class="team__member-image" src="ashley-greene.png" alt="">
+                <h3>ASHLEY GREENE</h3>
+                <h4>SEO / Developer</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim! </p>
+                <div class="team__social-icons-container">
+                    <a class="team__social-icons" href="https://www.facebook.com/"><img src="facebook.png" alt=""></a>
+                    <a class="team__social-icons" href="https://twitter.com/"><img src="twitter.png" alt=""></a>
+                    <a class="team__social-icons" href="https://www.gmail.com"><img src="mail.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skills container-generic" id="blog">
+        <h1 class="skills__header header-generic">WE GOT SKILLS!</h1>
+        <div class="skills__breakline breakline-generic"></div>
+        <p class="skills__paragraph paragraph-generic">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, doloremque est illum eum repudiandae magni
+            a cupiditate optio? Minima, deserunt?
+        </p>
+        <div class="skills__card-container">
+
+            <div class="skills__card">
+                <img src="chart1.png" alt="">
+                <h5>WEB DESIGN</h5>
+            </div>
+
+            <div class="skills__card">
+                <img src="chart2.png" alt="">
+                <h5>HTML / CSS</h5>
+            </div>
+
+            <div class="skills__card">
+                <img src="chart3.png" alt="">
+                <h5>GRAPHIC DESIGN</h5>
+            </div>
+
+            <div class="skills__card">
+                <img src="chart4.png" alt="">
+                <h5>UI / UX</h5>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portfolio container-generic" id="work">
+        <h1 class="portfolio__header header-generic">OUR PORTFOLIO</h1>
+        <div class="portfolio__breakline breakline-generic"></div>
+        <p class="portfolio__paragraph paragraph-generic">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis labore vero mollitia ipsa maiores fuga ea
+            error provident!
+        </p>
+        <ul class="portfolio__tabs">
+            <li class="portfolio__single-tab portfolio__single-tab--active">ALL</li>
+            <li class="portfolio__single-tab">WEB</li>
+            <li class="portfolio__single-tab">APPS</li>
+            <li class="portfolio__single-tab">ICONS</li>
+        </ul>
+
+        <div class="portfolio__card-container">
+
+            <div class="portfolio__card">
+                <img src="laptop1.png" alt="">
+                <h6>ISOMETRIC PERSPECTIVE MOCK-UP</h6>
+            </div>
+
+            <div class="portfolio__card">
+                <img src="laptop2.png" alt="">
+                <h6>TIME ZONE APP UI</h6>
+            </div>
+
+            <div class="portfolio__card">
+                <img src="laptop3.png" alt="">
+                <h6>VIRO MEDIA PLAYERS UI</h6>
+            </div>
+
+            <div class="portfolio__card">
+                <img src="laptop4.png" alt="">
+                <h6>BLOG / MAGAZINE FLAT UI KIT</h6>
+            </div>
+
+        </div>
+
+        <a href=# class="portfolio__button">
+            <p>LOAD MORE PROJECTS</p>
+        </a>
+    </section>
+
+    <section class="about-us container-generic">
+        <h1 class="about-us__header header-generic">WHAT PEOPLE SAY ABOUT US</h1>
+        <div class="about-us__breakline breakline-generic"></div>
+        <p class="about-us__paragraph paragraph-generic">
+            Our clients love us!</p>
+        <div class="about-us__card-container">
+
+            <div class="about-us__card">
+                <img class="about-us__card-image" src="kate-upton.png" alt="">
+                <div class="about-us__card-text">
+                    <p>
+                        "Nullam dapibus blandit orci, viverra gravida dui lobortis eget
+                        Nullam dapibus blandit orci, viverra gravida dui lobortis eget"
+                    </p>
+                    <h3>CHANEL IMAN</h3>
+                    <h6>CEO of Pinterest</h6>
+                </div>
+            </div>
+
+            <div class="about-us__card">
+                <img class="about-us__card-image" src="ashley-greene.png" alt="">
+                <div class="about-us__card-text">
+                    <p>
+                        "Nullam dapibus blandit orci, viverra gravida dui lobortis eget
+                        Nullam dapibus blandit orci, viverra gravida dui lobortis eget"
+                    </p>
+                    <h3>ANDRIANA LIMA</h3>
+                    <h6>Founder of Instagram</h6>
+                </div>
+            </div>
+
+            <div class="about-us__card">
+                <img class="about-us__card-image" src="olivia-wilde.png" alt="">
+                <div class="about-us__card-text">
+                    <p>
+                        "Nullam dapibus blandit orci, viverra gravida dui lobortis eget
+                        Nullam dapibus blandit orci, viverra gravida dui lobortis eget"
+                    </p>
+                    <h3>ANNE HATHAWAY</h3>
+                    <h6>Lead Designer at Behance</h6>
+                </div>
+            </div>
+
+            <div class="about-us__card">
+                <img class="about-us__card-image" src="anne-hathaway.png" alt="">
+                <div class="about-us__card-text">
+                    <p>
+                        "Nullam dapibus blandit orci, viverra gravida dui lobortis eget
+                        Nullam dapibus blandit orci, viverra gravida dui lobortis eget"
+                    </p>
+                    <h3>EMMA STONE</h3>
+                    <h6>Co-Founder of Shazam</h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact container-generic" id="contact">
+        <h1 class="contact__header header-generic">GET IN TOUCH</h1>
+        <div class="contact__breakline breakline-generic"></div>
+        <p class="contact__paragraph paragraph-generic">
+            1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+        </p>
+        <form class="contact__form" action="#">
+
+            <input class="contact__form-input" type="text" id="fname" name="firstname" placeholder="Your Name*"
+                required="required">
+            <input class="contact__form-input" type="text" id="email" name="email" placeholder="Your Email*"
+                required="required">
+            <textarea class="contact__form-text-area" id="msg" name="message" placeholder="Your Message*"
+                required="required"></textarea>
+            <input class="contact__submit-btn" type="submit" value="SEND MESSAGE">
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <a class="footer__link" href="https://www.facebook.com/">Facebook</a>
+        <a class="footer__link" href="https://twitter.com/">Twitter</a>
+        <a class="footer__link" href="https://shoelace.nyc/">Google+</a>
+        <a class="footer__link" href="https://www.linkedin.com">LinkedIn</a>
+        <a class="footer__link" href="https://www.behance.net">Behance</a>
+        <a class="footer__link" href="https://dribbble.com/">Dribbble</a>
+        <a class="footer__link" href="https://www.github.com">GitHub</a>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+<script type="text/javascript" src="app.js"></script></body>
+
+</html>
