@@ -21,6 +21,10 @@ import './assets/images/facebook.png';
 import './assets/images/twitter.png';
 import './assets/images/linkedin.png';
 import './assets/images/mail.png';
+import './assets/images/behance.png';
+import './assets/images/dribbble.png';
+import './assets/images/github.png';
+import './assets/images/googleplus.png';
 import './assets/images/anne-hathaway.png';
 import './assets/images/kate-upton.png';
 import './assets/images/olivia-wilde.png';
@@ -29,6 +33,7 @@ import './assets/images/chart1.png';
 import './assets/images/chart2.png';
 import './assets/images/chart3.png';
 import './assets/images/chart4.png';
+
 
 
 //menu bars animation and popup
