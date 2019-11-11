@@ -1,10 +1,9 @@
-# Baigiamasis HTML/CSS
+# Single Page Website
 
-Simple page, that I have made out of givven design.
+Just a simple webpage. Made this: 
+[Link to Page](https://raimedassimutis.github.io/Single-page-website/)
 
-[Link to Page](https://raimedassimutis.github.io/Wix-design-replica/)
-
-Design image: 
+Out of this design:
 ![Alt text](src/assets/images/design-img.png "Design")
 
 
