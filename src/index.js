@@ -84,11 +84,8 @@ $('[data-scroll]').on("click", function (e) {
         $("body").css({
             "overflow": "visible"
         });
-        console.log('klase buvo. istryniau');
-    } else {
-        console.log('nu as nieko neivykdziau sry')
-        
-    }
+        //console.log('klase buvo. istryniau');
+    } 
     
     scrollToCord(offset.top);
 })
